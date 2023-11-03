@@ -5,17 +5,17 @@
   "homepage": "https://Andrfedus.github.io//goit-js-hw-09",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url //goit-js-hw-09/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/Andrfedus/goit-js-hw-09"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Andriy Fedus <andrfedus@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/Andrfedus/goit-js-hw-09/issues"
   },
   "dependencies": {
     "flatpickr": "^4.6.13",

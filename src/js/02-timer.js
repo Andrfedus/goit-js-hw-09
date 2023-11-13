@@ -7,7 +7,7 @@ const btnTimerStart = document.querySelector('[data-start]');
 const timerFieldDays = document.querySelector('[data-days]');
 const timerFielHours = document.querySelector('[data-hours]');
 const timerFieldMinutes = document.querySelector('[data-minutes]');
-const timerFieldSeconds = document.querySelector('[data-seconds]');
+ const timerFieldSeconds =document.querySelector('[data-seconds]');
 
 
 btnTimerStart.disabled = true;
@@ -23,9 +23,9 @@ const options = {
     const currentDate = new Date();
 
     if (selectedDates[0] - currentDate > 0) {
-      refs.btnTimerStart.disabled = false;
+      btnTimerStart.disabled = false;
     } else {
-      refs.btnTimerStart.disabled = true;
+      btnTimerStart.disabled = true;
       Notify.failure('Please choose a date in the future', {
         timeout: 1500,
         width: '400px',
@@ -71,7 +71,7 @@ function onTimerStart() {
 function updateTimerFace({ days, hours, minutes, seconds }) {
  timerFieldDays.textContent = addLeadingZero(days);
   timerFielHours.textContent = addLeadingZero(hours);
-  timerFieldMinutes.textContent = addLeadingZero(minutes);
+timerFieldMinutes.textContent = addLeadingZero(minutes);
   timerFieldSeconds.textContent = addLeadingZero(seconds);
 }
 
